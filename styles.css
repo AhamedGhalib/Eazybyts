@@ -253,3 +253,64 @@ section:last-child {
 .project-info {
     padding: 20px;
 }
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .intro-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .intro-text {
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    .intro-text h1, .intro-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro-image img {
+        max-height: 300px;
+        width: auto;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    body {
+        margin: 20px 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about-content {
+        font-size: 1.2rem;
+        padding: 0 10px;
+    }
+}
