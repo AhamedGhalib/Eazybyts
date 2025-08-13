@@ -322,8 +322,8 @@ section:last-child {
     .social-icons {
         order: 3;
         margin-top: 6px;
-        gap: 6px;
-        font-size: 0.4rem;
+        gap: 10px;
+        font-size: 0.1rem;
     }
     .section-title {
         font-size: 1.8rem;
