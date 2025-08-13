@@ -86,7 +86,7 @@ body, html {
     padding: 0;
 }
 section {
-    padding: 50px 20px; /* uniform spacing */
+    padding: 50px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -278,67 +278,64 @@ section:last-child {
         padding: 5px 0;
     }
 
-    /* Intro section same height as others */
     .intro-section {
-        min-height: auto;
-        padding: 50px 15px;
+        padding-top: 80px;
     }
     .intro-content {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        gap: 20px;
-        text-align: center;
-        max-width: 100%;
+        justify-content: center;
+        gap: 15px;
+        text-align: left;
     }
     .intro-text {
-        align-items: center;
-        font-size: 1.3rem;
-        padding: 0 15px;
+        flex: 1;
+        align-items: flex-start;
+        font-size: 1.2rem;
+        padding: 0 10px;
     }
     .intro-text h1, .intro-text h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         white-space: normal;
-        text-align: center;
     }
 
-    /* Social icons between name & image */
-    .social-icons {
-        order: 2;
-        margin-top: 10px;
-    }
     .intro-image {
-        order: 3;
-        width: 100%;
-        max-width: 250px;
-        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
     }
     .intro-image img {
         max-width: 250px;
         height: auto;
     }
 
-    /* Left-aligned section headings */
+    .social-icons {
+        order: 3;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 20px;
+        font-size: 1.5rem;
+    }
     .section-title {
         font-size: 1.8rem;
         text-align: left;
         padding-left: 10px;
     }
 
-    /* Wider about paragraph */
     .about-content {
         font-size: 1.1rem;
         padding: 0 15px;
         max-width: 100%;
     }
 
-    /* Skills in 2×2 grid */
     .skills-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
         padding: 0 10px;
     }
 
-    /* Thicker project borders */
     .project-card {
         border-bottom: 5px solid rgba(242, 255, 0, 0.3);
     }
@@ -346,7 +343,6 @@ section:last-child {
         border-bottom-color: var(--accent-color);
     }
 
-    /* Same padding for all sections */
     section {
         padding: 50px 15px;
     }
