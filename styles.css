@@ -365,7 +365,7 @@ section:last-child {
         display: flex;
         justify-content: center;
         margin-top: 6px;
-        gap: 25px;
+        gap: 22px;
         font-size: 0.5rem;
     }
     .section-title {
