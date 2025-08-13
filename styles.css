@@ -291,7 +291,7 @@ section:last-child {
     }
 
     .intro-section {
-        padding-top: 60px;
+        padding-top: 50px;
     }
     .intro-content {
         flex-direction: column;
@@ -301,16 +301,16 @@ section:last-child {
     }
     .intro-text {
         font-size: 1.3rem;
-        padding: 0 12px;
+        padding: 0 10px;
     }
     .intro-text h1, .intro-text h2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         white-space: normal;
         margin: 0;
     }
 
     .intro-image {
-        max-width: 300px;
+        max-width: 350px;
     }
 
     .intro-image img {
@@ -320,9 +320,10 @@ section:last-child {
     }
 
     .social-icons {
+        order: 3;
         margin-top: 6px;
-        gap: 8px;
-        font-size: 0.6rem;
+        gap: 6px;
+        font-size: 0.4rem;
     }
     .section-title {
         font-size: 1.8rem;
