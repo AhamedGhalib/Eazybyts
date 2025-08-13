@@ -284,22 +284,21 @@ section:last-child {
     .intro-content {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         gap: 10px;
         text-align: center;
     }
     .intro-text {
-        font-size: 1.1rem;
-        padding: 0 10px;
+        font-size: 1.3rem;
+        padding: 0 12px;
     }
     .intro-text h1, .intro-text h2 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         white-space: normal;
         margin: 0;
     }
 
     .intro-image {
-        max-width: 120px;
+        max-width: 140px;
     }
 
     .intro-image img {
@@ -309,9 +308,9 @@ section:last-child {
     }
 
     .social-icons {
-        margin-top: 8px;
-        gap: 10px;
-        font-size: 1.1rem;
+        margin-top: 6px;
+        gap: 8px;
+        font-size: 0.9rem;
     }
     .section-title {
         font-size: 1.8rem;
