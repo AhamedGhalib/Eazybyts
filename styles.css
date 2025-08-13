@@ -267,17 +267,31 @@ section:last-child {
     .logo {
         font-size: 1.4rem;
     }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+    }
     .nav-links a {
         font-size: 1rem;
         padding: 6px 0;
+        width: 100%;
+        text-align: center;
     }
 
+    /* Intro section same size as others */
     .intro-section {
-    min-height: auto;
-    padding: 50px 15px; /* match other sections */
-}
-
-    /* Name & profession visibility */
+        min-height: auto;
+        padding: 50px 15px;
+    }
+    .intro-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+        max-width: 100%;
+    }
     .intro-text {
         align-items: center;
         font-size: 1.3rem;
@@ -285,29 +299,26 @@ section:last-child {
     }
     .intro-text h1, .intro-text h2 {
         font-size: 1.3rem;
-        white-space: normal; /* allow wrapping */
+        white-space: normal;
         text-align: center;
     }
-
     /* Social icons under text, above image */
     .social-icons {
-        order: 2; /* appear after text */
+        order: 2;
         margin-top: 10px;
     }
-.intro-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-}
-
     .intro-image {
         order: 3;
+        width: 100%;
         max-width: 250px;
-        height: auto;/* image comes last */
+        margin: 0 auto;
+    }
+    .intro-image img {
+        max-width: 250px;
+        height: auto;
     }
 
-    /* Section headings aligned left */
+    /* Section titles left-aligned */
     .section-title {
         font-size: 1.8rem;
         text-align: left;
@@ -328,12 +339,17 @@ section:last-child {
         padding: 0 10px;
     }
 
-    /* Project cards thicker border like about section */
+    /* Project cards with thicker bottom border like sections */
     .project-card {
         border-bottom: 5px solid rgba(242, 255, 0, 0.3);
     }
     .project-card:hover {
         border-bottom-color: var(--accent-color);
+    }
+
+    /* General section padding for uniform height */
+    section {
+        padding: 50px 15px;
     }
 }
 
