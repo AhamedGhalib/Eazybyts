@@ -257,7 +257,7 @@ section:last-child {
 }
 
 @media (max-width: 768px) {
-    /* Smaller header height */
+    /* Smaller header */
     .nav-container {
         flex-direction: column;
         align-items: center;
@@ -280,7 +280,7 @@ section:last-child {
         text-align: center;
     }
 
-    /* Intro section same size as others */
+    /* Intro section same height as others */
     .intro-section {
         min-height: auto;
         padding: 50px 15px;
@@ -302,7 +302,8 @@ section:last-child {
         white-space: normal;
         text-align: center;
     }
-    /* Social icons under text, above image */
+
+    /* Social icons between name & image */
     .social-icons {
         order: 2;
         margin-top: 10px;
@@ -318,28 +319,28 @@ section:last-child {
         height: auto;
     }
 
-    /* Section titles left-aligned */
+    /* Left-aligned section headings */
     .section-title {
         font-size: 1.8rem;
         text-align: left;
         padding-left: 10px;
     }
 
-    /* About paragraph width */
+    /* Wider about paragraph */
     .about-content {
         font-size: 1.1rem;
         padding: 0 15px;
         max-width: 100%;
     }
 
-    /* Skills 2x2 grid */
+    /* Skills in 2×2 grid */
     .skills-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
         padding: 0 10px;
     }
 
-    /* Project cards with thicker bottom border like sections */
+    /* Thicker project borders */
     .project-card {
         border-bottom: 5px solid rgba(242, 255, 0, 0.3);
     }
@@ -347,10 +348,11 @@ section:last-child {
         border-bottom-color: var(--accent-color);
     }
 
-    /* General section padding for uniform height */
+    /* Same padding for all sections */
     section {
         padding: 50px 15px;
     }
 }
+
 
 
