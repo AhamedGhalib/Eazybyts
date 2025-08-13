@@ -270,6 +270,11 @@ section:last-child {
         padding: 6px 0;
     }
 
+    .intro-section {
+    min-height: auto;
+    padding: 50px 15px; /* match other sections */
+}
+
     /* Name & profession visibility */
     .intro-text {
         align-items: center;
