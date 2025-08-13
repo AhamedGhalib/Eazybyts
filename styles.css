@@ -255,88 +255,70 @@ section:last-child {
 }
 
 @media (max-width: 768px) {
+    /* Smaller header height */
     .nav-container {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
-        padding: 1rem 1rem; /* slightly reduce horizontal padding */
+        gap: 5px;
+        padding: 0.5rem 1rem;
     }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        width: 100%; /* full width for easier tapping */
-        align-items: center;
+    .logo {
+        font-size: 1.4rem;
     }
-
     .nav-links a {
-        font-size: 1.3rem; /* slightly larger for touch */
-        padding: 8px 0;
-        width: 100%;
-        text-align: center;
+        font-size: 1rem;
+        padding: 6px 0;
     }
 
-    .intro-content {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-        max-width: 100%;
-        padding: 0 10px;
-    }
-
+    /* Name & profession visibility */
     .intro-text {
         align-items: center;
-        font-size: 1.6rem;
-        padding: 0 10px;
+        font-size: 1.3rem;
+        padding: 0 15px;
     }
-
     .intro-text h1, .intro-text h2 {
-        font-size: 1.6rem;
-        word-wrap: break-word;
+        font-size: 1.3rem;
+        white-space: normal; /* allow wrapping */
+        text-align: center;
     }
 
+    /* Social icons under text, above image */
+    .social-icons {
+        order: 2; /* appear after text */
+        margin-top: 10px;
+    }
     .intro-image {
-        width: 100%;
-        max-width: 320px;
-        margin: 0 auto;
+        order: 3; /* image comes last */
     }
 
-    .intro-image img {
-        max-height: 320px;
-        width: 100%;
-        height: auto;
-        object-fit: contain;
+    /* Section headings aligned left */
+    .section-title {
+        font-size: 1.8rem;
+        text-align: left;
+        padding-left: 10px;
     }
 
+    /* About paragraph width */
+    .about-content {
+        font-size: 1.1rem;
+        padding: 0 15px;
+        max-width: 100%;
+    }
+
+    /* Skills 2x2 grid */
     .skills-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
         padding: 0 10px;
     }
 
-    .projects-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding: 0 10px;
+    /* Project cards thicker border like about section */
+    .project-card {
+        border-bottom: 5px solid rgba(242, 255, 0, 0.3);
     }
-
-    body {
-        margin: 20px 10px;
-    }
-
-    .container {
-        padding: 0 10px;
-    }
-
-    .section-title {
-        font-size: 2rem;
-        text-align: center;
-        padding: 0 10px;
-    }
-
-    .about-content {
-        font-size: 1.2rem;
-        padding: 0 10px;
+    .project-card:hover {
+        border-bottom-color: var(--accent-color);
     }
 }
+
 
