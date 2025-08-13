@@ -297,6 +297,7 @@ section:last-child {
     .intro-text h1, .intro-text h2 {
         font-size: 1.2rem;
         white-space: normal;
+        margin: 0;
     }
 
     .intro-image {
