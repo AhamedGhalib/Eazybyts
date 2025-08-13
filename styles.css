@@ -279,7 +279,7 @@ section:last-child {
     }
 
     .intro-section {
-        padding-top: 80px;
+        padding-top: 60px;
     }
     .intro-content {
         flex-direction: row;
@@ -291,23 +291,24 @@ section:last-child {
     .intro-text {
         flex: 1;
         align-items: flex-start;
-        font-size: 1.2rem;
-        padding: 0 10px;
+        font-size: 1.1rem;
+        padding: 0 8px;
     }
     .intro-text h1, .intro-text h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         white-space: normal;
         margin: 0;
     }
 
     .intro-image {
+        flex: 0 0 auto;
+        max-width: 120px;
+    }
+
+    .intro-image img {
         max-width: 100%;
         height: auto;
         border-radius: 8px;
-    }
-    .intro-image img {
-        max-width: 250px;
-        height: auto;
     }
 
     .social-icons {
@@ -315,9 +316,9 @@ section:last-child {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 15px;
-        gap: 20px;
-        font-size: 1.5rem;
+        margin-top: 10px;
+        gap: 12px;
+        font-size: 1.2rem;
     }
     .section-title {
         font-size: 1.8rem;
