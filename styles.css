@@ -300,7 +300,6 @@ section:last-child {
         text-align: center;
     }
     .intro-text {
-        order: 1;
         font-size: 1.3rem;
         padding: 0 10px;
     }
@@ -311,7 +310,6 @@ section:last-child {
     }
 
     .intro-image {
-        order: 2;
         max-width: 350px;
     }
 
@@ -322,10 +320,11 @@ section:last-child {
     }
 
     .social-icons {
-        order: 3;
+        display: flex;
+        justify-content: center;
         margin-top: 6px;
-        gap: 10px;
-        font-size: 50px;
+        gap: 6px;
+        font-size: 0.5rem;
     }
     .section-title {
         font-size: 1.8rem;
