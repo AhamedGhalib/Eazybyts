@@ -81,12 +81,11 @@ body {
 body, html {
     scroll-padding-top: 70px;
     scroll-behavior: smooth;
-    margin: 50px;
-    margin-top: 0%;
+    margin: 0;
     padding: 0;
 }
 section {
-    padding: 40px;
+    padding: 50px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,30 +136,26 @@ section:last-child {
 }
 
 .intro-content  {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "text image"
+    "icons image";
+    column-gap: 60px;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    gap: 90px;
-    box-sizing: border-box;
 }
 
 .intro-text {
-    flex: 1;
-    text-align: left;
-    padding-right: 0;
+    grid-area: text;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    font-size: 2rem;
-    text-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .intro-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+    grid-area: image; justify-self: center;
 }
 
 .intro-image img {
@@ -168,14 +163,37 @@ section:last-child {
     border-radius: 0;
     object-fit: cover;
 }
+
+.intro-text h1 {
+    font-size: 3rem;
+    white-space: nowrap;
+    margin-bottom: 0.8rem;
+}
+.intro-text h2 {
+    font-size: 2rem;
+}
+
 .intro-text h1, .intro-text h2 {
     margin: 0;
 }
 .social-icons {
+    grid-area: icons;
     display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    margin-top: 1.5rem;
+}
+
+.intro-text,
+.social-icons {
+    justify-self: center; /* horizontal center in left column */
+    text-align: center;
+}
+
+.social-icons .icon-link {
+    font-size: 3.5rem;
 }
 
 .name-highlight {
@@ -304,9 +322,20 @@ section:last-child {
         padding: 0 10px;
     }
     .intro-text h1, .intro-text h2 {
-        font-size: 1.5rem;
         white-space: normal;
         margin: 0;
+    }
+    .intro-text h1 {
+    font-size: 1.8rem;
+    white-space: nowrap;
+    margin-bottom: 0.6rem;
+    }
+    .intro-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .social-icons .icon-link {
+        font-size: 1rem;
     }
 
     .intro-image {
