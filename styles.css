@@ -185,7 +185,7 @@ section:last-child {
     gap: 16px;
     align-items: center;
     justify-content: center;
-    margin-top: -5rem;
+    margin-top: -6rem;
 }
 
 .intro-text,
@@ -278,7 +278,7 @@ section:last-child {
 
 @media (min-width: 769px) {
     .intro-text {
-        margin-top: 10rem;
+        margin-top: 8rem;
     }
 }
 
