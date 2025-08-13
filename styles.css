@@ -36,9 +36,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
 }
 
 .logo {
@@ -70,9 +70,9 @@ body {
 
 .container {
     margin-top: 70px;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     gap: 0;
