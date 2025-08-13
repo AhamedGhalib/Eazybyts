@@ -323,7 +323,7 @@ section:last-child {
         order: 3;
         margin-top: 6px;
         gap: 10px;
-        font-size: 0.1rem;
+        font-size: 100px;
     }
     .section-title {
         font-size: 1.8rem;
