@@ -185,12 +185,12 @@ section:last-child {
     gap: 16px;
     align-items: center;
     justify-content: center;
-    margin-top: 0.5rem;
+    margin-top: -5rem;
 }
 
 .intro-text,
 .social-icons {
-    justify-self: center; /* horizontal center in left column */
+    justify-self: center;
     text-align: center;
 }
 
