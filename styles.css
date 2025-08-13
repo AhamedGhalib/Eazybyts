@@ -300,6 +300,7 @@ section:last-child {
         text-align: center;
     }
     .intro-text {
+        order: 1;
         font-size: 1.3rem;
         padding: 0 10px;
     }
@@ -310,6 +311,7 @@ section:last-child {
     }
 
     .intro-image {
+        order: 2;
         max-width: 350px;
     }
 
